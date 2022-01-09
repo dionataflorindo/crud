@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body page ='lista'>
+    <div id="listaRegistros">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Data de nascimento</th>
+                    <th>Nota final do curso</th>
+                </tr>
+                <tbody id="listaRegistrosBody"></tbody>
+            </thead>
+        </table>
+        <div>
+            <button onclick="visualizar('cadastro')">Novo usuario</button>
+        </div>
+    </div>
+
+    <form id="cadastroRegistros">
+        <div class="label" >
+            <div>ID</div>
+            <div>
+                <input type="number" readonly id="id">
+            </div>
+        </div>
+        <div class="label1">
+            <div>Nome</div>
+            <div>
+                <input type="text" id="nome">
+            </div>
+        </div>
+        <div class="label1">
+            <div>Telefone</div>
+            <div>
+                <input type="tel" id="tel">
+            </div>
+        </div>
+        <div class="label1">
+            <div>Data de nascimento</div>
+            <div>
+                <input type="date" id="data">
+            </div>
+        </div>
+        <div class="label1">
+            <div>Nota final do curso</div>
+            <div>
+                <input type="number" id= "nota">
+            </div>
+        </div>
+        <div>
+            <button>Salvar</button>
+            <button onclick="visualizar('lista')" class="cancelar">Cancelar</button>
+
+        </div>
+
+    </form>
+
+<script src="index.js"></script> 
+</body>
+
+</html>
